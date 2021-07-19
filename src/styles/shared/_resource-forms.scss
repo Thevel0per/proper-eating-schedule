@@ -1,0 +1,19 @@
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+
+@include textfield.core-styles;
+
+.resource-form {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0 ,0, .16);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  
+  & label{
+    width: 100%;
+  }
+}

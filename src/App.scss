@@ -1,0 +1,19 @@
+@import './styles/shared/colors';
+@import './styles/shared/resource-forms';
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Round');
+
+.main-container {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+}
+
+.component-container {
+  padding: 1rem;
+}
+
+// Material Design Icons size adjusting
+.material-icons-round { color: inherit; }
+.material-icons-round.md-18 { font-size: 18px; }
+.material-icons-round.md-24 { font-size: 24px; }
+.material-icons-round.md-30 { font-size: 30px; }
+.material-icons-round.md-48 { font-size: 48px; }

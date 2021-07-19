@@ -1,0 +1,42 @@
+@import './colors';
+
+.menu {
+  display: grid;
+  grid-template-rows: 13rem 1fr 13rem;
+  background: $accent-color-3;
+  color: $secondary-color;
+  justify-items: center;
+  padding: .5rem;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__tabs {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  &__footer {
+    font-size: .5rem;
+  }
+
+  &__trademark {
+    position: absolute;
+    bottom: .5rem;
+    left: .5rem;
+  }
+
+  &__item {
+    color: $secondary-color;
+  }
+
+  &__active-item {
+    color: $accent-color-2;
+  }
+}
