@@ -39,4 +39,18 @@
   &__active-item {
     color: $accent-color-2;
   }
+
+  &__active-bar {
+    width: 4px;
+    border-radius: 8px;
+    height: 32px;
+    background-color: $accent-color-2;
+    position: absolute;
+    left: -1px;
+  }
+
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+  }
 }
