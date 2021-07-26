@@ -1,17 +1,10 @@
-import React from 'react';
-import {
-  Route
-} from "react-router-dom";
+import NewRecipe from '../components/recipes/new'
+import RecipesIndex from '../components/recipes'
 
-const RecipesRoutes = () => 
-  <div>
-    <Route path="/recipes/new">
-    <RecipesIndex />
-    </Route>
-    <Route path="/recipes">
-      <RecipesIndex />
-    </Route>
-  </div>
+const recipesRoutes = [
+  { "route": "/recipes/new", "renderComponent": <NewRecipe />},
+  { "route": '/recipes', "renderComponent": <RecipesIndex />}
+]
 
-export default RecipesRoutes;
+export default recipesRoutes;
   

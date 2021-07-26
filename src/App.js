@@ -8,10 +8,6 @@ import {MDCTextField} from '@material/textfield';
 import { Component } from 'react';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount(){
     document.querySelectorAll('.mdc-text-field').forEach(el => { new MDCTextField(el) });
   }

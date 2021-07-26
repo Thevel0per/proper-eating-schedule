@@ -3,23 +3,21 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import RecipesIndex from './components/recipes';
-import Home from './components/Home';
-import NewRecipe from './components/recipes/new';
-import NewIngredient from './components/ingredients/new';
-import IngredientsIndex from './components/ingredients';
+import Home from './components/Home'
+import NewIngredient from './components/ingredients/new'
+import IngredientsIndex from './components/ingredients'
+import recipesRoutes from './routes/recipesRoutes'
+import EditIngredient from './components/ingredients/edit';
 
 const AppRouter = () => {
 
-  const recipesRoutes = [
-    { "route": "/recipes/new", "renderComponent": <NewRecipe />},
-    { "route": '/recipes', "renderComponent": <RecipesIndex />}
-  ]
-
   const ingredientsRoutes = [
     { "route": "/ingredients/new", "renderComponent": <NewIngredient />},
+    { "route": "/ingredients/:id/edit", "renderComponent": <EditIngredient />},
     { "route": '/ingredients', "renderComponent": <IngredientsIndex />}
   ]
+
+  
 
   return (
     <Switch>

@@ -2,6 +2,14 @@
 @import './styles/shared/resource-forms';
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Round');
 
+body {
+  background: $background-color;
+}
+
+a {
+  text-decoration: none;
+}
+
 .main-container {
   display: grid;
   grid-template-columns: 6rem 1fr;
@@ -9,6 +17,54 @@
 
 .component-container {
   padding: 1rem;
+  display: grid;
+  grid-template-rows: 5rem 1fr;
+
+  &__header {
+    display: grid;
+    grid-template-columns: 1fr 16rem;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.button {
+  width: 8rem;
+  padding: .5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  font-weight: 600;
+  color: rgba(0, 0, 0, .7);
+  text-align: center;
+  font-size: 1rem;
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--commit{
+    background: $accent-color-2;
+
+    &:hover {
+      background: $accent-color-2-darker;
+    }
+  }
+
+  &--cancel {
+    background: $accent-color-1;
+
+    &:hover {
+      background: $accent-color-1-darker;
+    }
+  }
+}
+
+.commit-button:hover {
+  
 }
 
 // Material Design Icons size adjusting
