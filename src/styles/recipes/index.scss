@@ -1,0 +1,20 @@
+.recipes-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  height: fit-content;
+  
+  &__element {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .16);
+
+    &__actions {
+      justify-content: flex-end;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}

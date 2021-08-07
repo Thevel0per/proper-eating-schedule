@@ -1,0 +1,15 @@
+.ingredient-field {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3rem;
+  grid-gap: .5rem;
+  margin-bottom: .5rem;
+
+  &__remove-button {
+    background: none;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
