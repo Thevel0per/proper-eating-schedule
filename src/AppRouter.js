@@ -21,8 +21,8 @@ const AppRouter = () => {
 
   return (
     <Switch>
-      { recipesRoutes.map( ({route, renderComponent}) => <Route path={route}>{renderComponent}</Route>) }
-      { ingredientsRoutes.map( ({route, renderComponent}) => <Route path={route}>{renderComponent}</Route>) }
+      { recipesRoutes.map( ({route, renderComponent}, index) => <Route path={route} key={`recipes-route-${index}`}>{renderComponent}</Route>) }
+      { ingredientsRoutes.map( ({route, renderComponent}, index) => <Route path={route} key={`ingredients-route-${index}`}>{renderComponent}</Route>) }
       <Route path="/">
         <Home />
       </Route>
