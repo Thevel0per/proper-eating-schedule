@@ -4,14 +4,9 @@ import {
   BrowserRouter as Router,
 } from "react-router-dom";
 import AppRouter from './AppRouter'
-import {MDCTextField} from '@material/textfield';
 import { Component } from 'react';
 
 class App extends Component {
-  componentDidMount(){
-    document.querySelectorAll('.mdc-text-field').forEach(el => { new MDCTextField(el) });
-  }
-
   render() {
     return (
       <div className="App">
