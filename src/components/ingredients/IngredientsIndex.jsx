@@ -1,5 +1,5 @@
 import {React, Component} from 'react'
-import IngredientElement from './_IngredientElement'
+import IngredientElement from './IngredientElement'
 import '../../styles/ingredients/index.scss'
 
 class IngredientsIndex extends Component {
